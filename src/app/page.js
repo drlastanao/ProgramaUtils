@@ -21,21 +21,17 @@ const utilities = [
 export default function Home() {
     return (
         <div>
-            <header style={{ marginBottom: '3rem', textAlign: 'center' }}>
+            <header className="page-header" style={{ marginBottom: '3rem' }}>
                 <h1 style={{ fontSize: '3rem', marginBottom: '0.5rem' }}>ProgramaUtils</h1>
                 <p style={{ color: '#94a3b8', fontSize: '1.2rem' }}>Recopilación de utilidades para desarrolladores</p>
             </header>
 
-            <div style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
-                gap: '2rem'
-            }}>
+            <div className="grid-utilities">
                 {utilities.map((util) => (
                     <Link href={util.href} key={util.id} className="glass-card" style={{ display: 'block' }}>
-                        <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>{util.icon}</div>
-                        <h2 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>{util.name}</h2>
-                        <p style={{ color: '#94a3b8', lineHeight: '1.5' }}>{util.description}</p>
+                        <div className="card-icon">{util.icon}</div>
+                        <h2 className="card-title">{util.name}</h2>
+                        <p className="card-description">{util.description}</p>
                     </Link>
                 ))}
             </div>
