@@ -8,6 +8,13 @@ const utilities = [
         icon: '🔗',
         href: '/base64'
     },
+    {
+        id: 'sql-formatter',
+        name: 'Formateador SQL',
+        description: 'Embellece y organiza tus consultas SQL con un ancho máximo de 80 caracteres.',
+        icon: '📊',
+        href: '/sql-formatter'
+    },
     // Más utilidades se añadirán aquí
 ];
 
