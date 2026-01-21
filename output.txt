@@ -1,0 +1,4 @@
+total 0
+drwxr-xr-x. 1 davidrubio davidrubio 20 ene 21 18:53 .
+drwxr-xr-x. 1 davidrubio davidrubio 82 ene 21 18:49 ..
+-rw-r--r--. 1 davidrubio davidrubio  0 ene 21 18:53 output.txt
